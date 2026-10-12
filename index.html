@@ -1,1 +1,88 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Полиграфия — сапалы баспа қызметі</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1c1c1c;--muted:#666;--card:#fff;--line:#e5e3dc;--accent:#d6336c;--accent2:#0c8599;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141414;--fg:#f2f2f2;--muted:#a0a0a0;--card:#1e1e1e;--line:#333}}
+:root[data-theme="dark"]{--bg:#141414;--fg:#f2f2f2;--muted:#a0a0a0;--card:#1e1e1e;--line:#333}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;font-size:1.3rem;letter-spacing:.5px}
+.logo span{color:var(--accent)}
+nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-size:.95rem}
+.hero{padding:56px 0 48px}
+.hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.15;margin:0 0 16px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero p{color:var(--muted);max-width:560px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:13px 26px;border-radius:10px;text-decoration:none;font-weight:600;margin-top:14px}
+.dots{display:flex;gap:8px;margin-bottom:20px}
+.dots i{width:14px;height:14px;border-radius:50%;display:block}
+h2{font-size:1.7rem;margin:48px 0 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card b{display:block;font-size:1.05rem;margin-bottom:6px}
+.card span{color:var(--muted);font-size:.93rem}
+.steps{counter-reset:s;display:grid;gap:12px}
+.steps div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px 14px 56px;position:relative}
+.steps div:before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:12px;width:28px;height:28px;border-radius:50%;background:var(--accent2);color:#fff;text-align:center;line-height:28px;font-weight:700}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px;margin-bottom:40px}
+.contact a{color:var(--accent)}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:24px 0}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo">Print<span>House</span></div>
+  <nav><a href="#services">Қызметтер</a><a href="#how">Қалай жұмыс істейміз</a><a href="#contact">Байланыс</a></nav>
+</header>
 
+<section class="hero">
+  <div class="dots"><i style="background:#00b7eb"></i><i style="background:#e6007e"></i><i style="background:#ffd400"></i><i style="background:#222"></i></div>
+  <h1>Сіздің идеяңыз — <em>сапалы баспада</em></h1>
+  <p>Визиткадан бастап үлкен баннерге дейін. Жылдам, әрі қолжетімді бағамен басып шығарамыз.</p>
+  <a class="btn" href="#contact">Тапсырыс беру</a>
+</section>
+
+<section id="services">
+  <h2>Қызметтеріміз</h2>
+  <div class="grid">
+    <div class="card"><b>Визиткалар</b><span>Қағаз түрін өзіңіз таңдайсыз, ламинациямен немесе онсыз.</span></div>
+    <div class="card"><b>Буклеттер мен флаерлер</b><span>Жарнамалық материалдар кез келген тиражбен.</span></div>
+    <div class="card"><b>Баннерлер мен плакаттар</b><span>Үлкен форматты баспа, көше және интерьер үшін.</span></div>
+    <div class="card"><b>Стикерлер мен жапсырмалар</b><span>Брендіңізге арналған кесілген стикерлер.</span></div>
+    <div class="card"><b>Футболка мен кружкаға басу</b><span>Жеке дизайн немесе корпоративтік сыйлықтар.</span></div>
+    <div class="card"><b>Кітап, диплом, курстық</b><span>Брошюралау, түптеу және мұқаба жасау.</span></div>
+  </div>
+</section>
+
+<section id="how">
+  <h2>Қалай жұмыс істейміз</h2>
+  <div class="steps">
+    <div>Тапсырысыңызды WhatsApp немесе телефон арқылы жібересіз</div>
+    <div>Макетті бірге келісеміз, қажет болса дизайн жасаймыз</div>
+    <div>Басып шығарамыз және сапасын тексереміз</div>
+    <div>Өзіңіз келіп аласыз немесе жеткізіп береміз</div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Байланыс</h2>
+  <div class="contact">
+    <p><b>Мекенжай:</b> Астана қ., [көше атауы, үй нөмірі]</p>
+    <p><b>Телефон / WhatsApp:</b> <a href="tel:+77000000000">+7 700 000 00 00</a></p>
+    <p><b>Жұмыс уақыты:</b> Дс–Жм 9:00–18:00, Сб 10:00–15:00</p>
+    <a class="btn" href="https://wa.me/77000000000">WhatsApp-қа жазу</a>
+  </div>
+</section>
+
+<footer>© 2026 PrintHouse. Барлық құқықтар қорғалған.</footer>
+</div>
+</body>
+</html>
